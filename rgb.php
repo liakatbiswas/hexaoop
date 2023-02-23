@@ -10,22 +10,18 @@ class RGB {
   $this->parseColor();
  }
 
- public function getColor() {
-  return $this->color;
- }
+//  public function getColor() {
+//   return $this->color;
+//  }
 
- public function getRGBColor() {
-  return [$this->red, $this->green, $this->blue];
- }
+//  public function getRGBColor() {
+//   return [$this->red, $this->green, $this->blue];
+//  }
 
- public function readRGBColor() {
-  echo "Red = {$this->red}\nGreed = {$this->green}\nBlue = {$this->blue}";
- }
-
- public function setColor( $colorCode ) {
-  $this->color = ltrim( $colorCode, "#" );
-  $this->parseColor();
- }
+//  public function setColor( $colorCode ) {
+//   $this->color = ltrim( $colorCode, "#" );
+//   $this->parseColor();
+//  }
 
  private function parseColor() {
   if ( $this->color ) {
@@ -35,18 +31,22 @@ class RGB {
   }
  }
 
- public function getRed() {
-  return $this->red;
+ public function readRGBColor() {
+  echo "Red = {$this->red}\nGreed = {$this->green}\nBlue = {$this->blue}";
  }
- public function getGreen() {
-  return $this->green;
- }
- public function getBlue() {
-  return $this->blue;
- }
+
+//  public function getRed() {
+//   return $this->red;
+//  }
+//  public function getGreen() {
+//   return $this->green;
+//  }
+//  public function getBlue() {
+//   return $this->blue;
+//  }
 
 }
 
-$myColor = new RGB( "#aaddcc" );
+$myColor = new RGB( "#ffffff" );
 
 $myColor->readRGBColor();
